@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>Frank Xavier</title>
     <style>
       body {
         background-color: #ffffff; /* white color */
@@ -13,20 +13,25 @@
         text-align: center; /* center the content horizontally */
       }
       .navbar {
-        background-color: #333; /* dark gray color for navbar */
+        background-color: #ffffff; /* white color for navbar */
         overflow: hidden; /* hide overflowing content */
         text-align: center; /* center the links horizontally */
       }
       .navbar a {
         display: inline-block; /* make links display as block elements */
-        color: #f2f2f2; /* light gray text color for links */
+        color: #000000; /* black text color for links */
         text-align: center; /* center the text within the links */
         padding: 14px 16px; /* add padding around the links */
         text-decoration: none; /* remove underline from links */
       }
+      .navbar a:not(:last-child)::after {
+        content: "|"; /* add a separator after each link, except for the last one */
+        margin: 0 10px; /* add margin around the separator */
+        color: #000000; /* black color for the separator */
+      }
       .navbar a:hover {
-        background-color: #ddd; /* gray color when hovering over links */
-        color: black; /* black text color when hovering over links */
+        background-color: #dddddd; /* light gray color when hovering over links */
+        color: #000000; /* black text color when hovering over links */
       }
       .content {
         max-width: 800px; /* limit the width of the content */
