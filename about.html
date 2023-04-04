@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      body {
+        background-color: #ffffff; /* white color */
+        margin: 0; /* remove default margin */
+        padding: 0; /* remove default padding */
+      }
+      .header {
+        height: 75px; /* set the height of the header */
+        text-align: center; /* center the content horizontally */
+      }
+      .navbar {
+        background-color: #ffffff; /* white color for navbar */
+        overflow: hidden; /* hide overflowing content */
+        text-align: center; /* center the links horizontally */
+      }
+      .navbar a {
+        display: inline-block; /* make links display as block elements */
+        color: #000000; /* black text color for links */
+        text-align: center; /* center the text within the links */
+        padding: 14px 16px; /* add padding around the links */
+        text-decoration: none; /* remove underline from links */
+      }
+      .navbar a:not(:last-child)::after {
+        content: "|"; /* add a separator after each link, except for the last one */
+        margin: 0 10px; /* add margin around the separator */
+        color: #000000; /* black color for the separator */
+      }
+      .navbar a:hover {
+        background-color: #dddddd; /* light gray color when hovering over links */
+        color: #000000; /* black text color when hovering over links */
+      }
+      .content {
+        display: flex; /* enable flexbox layout */
+        max-width: 1200px; /* limit the width of the content */
+        margin: auto; /* center the content horizontally */
+        padding: 20px; /* add padding around the content */
+      }
+      .left-column {
+        display: flex; /* enable flexbox layout */
+        flex-direction: column; /* stack the images vertically */
+        justify-content: space-between; /* distribute the space evenly between the images */
+        margin-right: 20px; /* add margin to the right of the images */
+      }
+      .left-column img {
+        max-height: 100%; /* limit the height of the images to the height of the container */
+        width: auto; /* maintain the aspect ratio of the images */
+      }
+      .right-column {
+        flex: 1; /* expand to fill the remaining space */
+      }
+      .text {
+        max-width: 800px; /* limit the width of the text */
+        margin: auto; /* center the text horizontally */
+        padding: 0; /* remove padding around the text */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <!-- your header content goes here -->
+    </div>
+   <div class="navbar">
+      <a href="https://xavierfe.github.io/frankxavier/about.html">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">PUBLICATIONS</a>
+      <a href="#">ART</a>
+      <a href="#">EQUITY IN SCIENCE</a>
+      <a href="#">CV</a>
+    </div>
+    <div class="content">
+      <div class="left-column">
+        <img src="images/image1.jpg" alt="Image 1">
+        <img src="images/image2.jpg" alt="Image 2">
+      </div>
+      <div class="right-column">
+        <div class="text">
+          <!-- your text content goes here -->
+        </div>
+      </div
